@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .map h1{
+            text-align: center;
+            line-height: 600px;
+            font-family:  Wawati SC;
+            color: rgba(130,0,120,0.5);
+        }
+        .map{
+            width: 800px;
+            height: 600px;
+            background: rgba(0,130,0,0.15);
+            position: relative;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="map">
+  <h1> 琪宝专属，战斗吧！(^V^)</h1>
+</div>
+<script src="Food.js"></script>
+<script src="Snake.js"></script>
+<script src="Game.js"></script>
+</body>
+<script>
+       //实例化游戏
+      var game = new Game(document.querySelector(".map"));
+      game.init();
+    //  //外部测试代码
+    //   var fd = new Food();
+    //  // console.log(fd.color);
+    // fd.init(document.querySelector(".map"));
+    // // fd.init(document.querySelector(".map"));
+    // //大蛇创建
+    // var snake = new Snake();
+    // snake.init(document.querySelector(".map"));//先看到大蛇
+    // setInterval(function () {
+    //      snake.move(fd,document.querySelector(".map"));//走一步
+    //      snake.init(document.querySelector(".map"));//初始化，重新画一条小蛇
+    // },100000)
+    // // snake.move(fd,document.querySelector(".map"));//走一步
+    // // snake.init(document.querySelector(".map"));//初始化，重新画一条小蛇
+</script>
+</html>
